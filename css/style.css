@@ -1,0 +1,249 @@
+:root{
+    --azul_bold : hsl(233, 47%, 7%);
+    --negro : hsl(0, 0%, 3%);
+    --verde : hsl(73, 64%, 61%);
+    --blanco : hsl(0, 0%, 100%);
+    --plomoSuave : hsla(0, 5%, 85%, 0.75);
+    --verdeOscuro : hsla(133, 44%, 19%, 0.75);
+    --verdeClaro : hsla(133, 38%, 55%, 0.75);
+    }
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+    background-color: var(--negro);
+    color:white;
+    font-size: 16px;
+}
+.contenedor{
+
+}
+.caja-total{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azul_bold);
+    margin: 20px;
+}
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto{
+text-align: center;
+}
+.texto h1{
+    color: var(--blanco);
+    font-size: 27px;
+   
+}
+.texto span{
+    color:var(--verde);
+}
+.texto p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.estadisticas{
+    display: flex;
+    flex-direction: column;
+
+}
+.compaines{
+    text-align: center;
+    line-height: 1em;
+}
+.compaines h1{
+
+}
+.compaines p{
+letter-spacing: 2px;
+font-size: 15px;
+color: var(--plomoSuave);
+}
+.templates{
+    text-align: center;
+    line-height: 1em;
+    
+}
+.templates h1{
+
+}
+.templates p{
+letter-spacing: 2px;
+font-size: 15px;
+color: var(--plomoSuave);
+}
+.queries{
+    text-align: center;
+    line-height: 1em;
+}
+.queries h1{
+
+}
+.queries p{
+letter-spacing: 2px;
+font-size: 15px;
+color: var(--plomoSuave);
+}
+
+.informacion{
+margin: 15px;
+}
+.tarjeta{
+    background-color: var(--verdeOscuro);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.persona{
+    display: flex;
+    flex-direction: row;
+}
+.persona img{
+ border-radius: 30px;
+ height: 60px;
+ width: 60px;
+ margin-top: 15px;
+ margin-left: 20px;
+ margin-right: 15px;
+}
+.caja-info{
+    
+  
+    line-height: 0.5em;
+    margin-top:  17px; 
+}
+.caja-info h1{
+    font-weight: 800;
+    font-size: 14px;
+    font-family: 'Inter';
+}
+.caja-info p{
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--plomoSuave); 
+   
+}
+.tarjeta p{
+    font-weight: 100;
+    font-size: 15px;
+    margin: 10px 15px;
+    
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--verdeClaro);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.rating h3{
+    font-size: 15px;
+    text-align: right;
+}
+.estrellas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    margin: 15px;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.contacto input{
+     border-radius: 10px;
+     border: 0px;
+     height: 2em;
+     width: 250px;
+     margin-right: 10px;
+}
+.contacto button{
+    background-color: var(--verde);
+    height: 2em;
+    width: 100px;
+    border-radius: 5px;
+    border:0px;
+    color: var(--verdeOscuro);
+    font-weight: 600;
+}
+
+
+
+@media screen and (min-width:768px){
+    .contenedor{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin: 100px;
+        
+
+    }
+    .caja-total{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 30px 70px;
+       
+    }
+    .detalle{
+        margin-top: 100px;
+        
+    }
+    .texto{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+   
+    
+    .estadisticas{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;   
+    }
+    .compaines{
+        padding-right: 25px;
+    }
+    .compaines p{
+        letter-spacing: 0px;
+    }
+    .templates{
+        padding-right: 25px;
+    }
+    .templates p{
+        letter-spacing: 0px;
+    }
+    .queries p{
+        letter-spacing: 0px;
+    }
+
+.tarjeta{
+    padding: 8px 30px 20px 30px;
+}
+.rating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 50px;
+}
+.estrellas{
+    justify-content: space-evenly;
+
+}
+.contacto{
+    margin-top: 35px;
+}
+.contacto input{
+width: 350px;
+}
+.contacto button{
+    width: 130px;
+}
+
+}
